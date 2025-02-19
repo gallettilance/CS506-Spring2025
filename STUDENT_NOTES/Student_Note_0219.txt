@@ -1,0 +1,15 @@
+P(X): The number of dinosaur is a matter to the weight distribution
+
+The weight* The weight within one species.
+
+P(X|S): The weight within some species. 
+
+Normal distribution:
+Min and variance( two significant values)
+
+We also need the proportion of the species
+
+
+Aim to find the max of the formula:
+What we find, is base on what we are looking for, the i and j decide this. 
+
