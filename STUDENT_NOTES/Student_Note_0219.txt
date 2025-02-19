@@ -1,3 +1,4 @@
+Cluster final lecture
 P(X): The number of dinosaur is a matter to the weight distribution
 
 The weight* The weight within one species.
