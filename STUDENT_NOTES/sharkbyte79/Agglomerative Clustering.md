@@ -1,7 +1,7 @@
 ---
 title: Agglomerative Clustering
 date: 2025-02-17
-course: CS506 - Data Science Tools and Applications
+course: CS506
 author: pierce77@bu.edu
 tags:
   - clustering
@@ -9,18 +9,18 @@ tags:
   - agglomerative
   - distance
 ---
-# Agglomerative Clustering algorithm
-**Agglomerative clustering** is a type of [hierarchical clustering](Clustering.md#Hierarchical%20Clustering) that uses a *bottoms-up* approach of constructing a dendrogram while repeatedly merging separate clusters into one.
+# Agglomerative Clustering Algorithm
+**Agglomerative clustering** is a type of [hierarchical clustering](Clustering.md#Hierarchical%20Clustering) that uses a *bottom-up* approach of constructing a dendrogram while repeatedly merging separate clusters into one.
 1. Start with every point in its own cluster
 2.  Compute the distance between all pairs of clusters
 3. Merge the two nearest clusters
 4. Repeat steps 2 and 3 until every point belongs to the same cluster
 
-The *bottoms-up* approach refers to the fact that the dendrogram is **built up** by iteratively combining data points from individual singleton[^1] clusters into one maximal cluster.[^2]
+The *bottom-up* approach refers to the fact that the dendrogram is **built up** by successively combining data points from individual singleton[^1] clusters into one maximal cluster.[^2]
 
 # Distance Functions for Agglomerative Clustering
 ## Single-Link Distance
-The **min** of all pairwise distances between a point from one cluster and a point from the other cluster.
+The **min** of all pairwise [distances](Distance%20and%20Similarity.md) between a point from one cluster and a point from the other cluster.
 - Can handle clusters of varying sizes
 - Sensitive to noise points
 - Tends to create elongated clusters
@@ -44,7 +44,7 @@ The **average** of all pairwise distances between a point from one cluster and a
 - Less susceptible to noise and outliers
 - Biased towards globular clusters
 $$\Large{
-D_{AL}(C_1, C_2) = \frac{1}{|C_1| \times |C_2|} \times \sum_{p_1 \in C_1, p_2 \in C_2} d(p_1, p_2)
+D_{AL}(C_1, C_2) = (\frac{1}{|C_1| \cdot |C_2|}) \quad \cdot \sum_{p_1 \in C_1, p_2 \in C_2} d(p_1, p_2)
 }
 $$
 
