@@ -1,0 +1,22 @@
+The limitation of DBSCAN:
+
+-cannot have a good performance on high dense dataset.
+
+Error of two images:
+the labels should change
+
+Same MinPts:
+Lower Eps means cluster  may more separate. 
+Higher Eps means cluster may more concentrated. 
+
+
+Silhoette Scores:
+ai: the distance from point i to every other point in its cluster.
+
+bi: smallest mean distance from point i to every point in another cluster. 
+
+close to 1: good cluster result.
+
+close to 0: may have some overlaps. 
+
+close to -1: sample cluster may be some error
