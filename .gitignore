@@ -3,3 +3,11 @@
 env/
 */env
 */.DS_STORE
+.idea/workspace.xml
+.idea/misc.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/vcs.xml
+lecture_03/worksheet_03.ipynb
+lecture_05/worksheet_05.ipynb
+*.ipynb
+*.ipynb
