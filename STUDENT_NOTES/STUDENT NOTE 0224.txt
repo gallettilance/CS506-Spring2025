@@ -1,0 +1,15 @@
+Both A and B are predictor, 
+there are 3 variables in GGM:
+
+
+Mean (μ):
+Each Gaussian component has a mean vector with D elements, so this contributes D parameters per component. 
+
+Covariance Matrix (Σ):
+Each component also has a covariance matrix, which has D*(D-1)/2 unique parameters. 
+
+Mixing Coefficients (π):
+To combine the different Gaussian components, we need K-1 mixing coefficients, as the last coefficient is automatically determined by the constraint that they sum to 1. 
+
+The maximum disagreement between two clustering for a dataset of that size is:(n*n-1)/2: 
+shake hand problem
